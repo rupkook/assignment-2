@@ -67,6 +67,8 @@ STYLESHEET INDEXING
     --color-secondary: #FFFFFF;
     --menu-font-color: #3C354F;
     --color-btn-1: #E7E6E9;
+    --color-foot: #0B0223;
+    --color-foot-text: #9D9AA7;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
     --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
@@ -556,6 +558,7 @@ li {
 }
 
 .gamer-header {
+    margin: 0;
     background-color: var(--color-secondary);
     padding: 37px 0;
     display: -webkit-box;
@@ -688,75 +691,89 @@ li {
 /*-------------------------
    Footer Styles
 -------------------------*/
-.umart-footer {
-    padding: 48px 110px 48px 156px;
-    background-color: var(--color-primary);
+* {
+    font-family: var(--font-primary);
+    list-style: none;
+    text-decoration: none;
 }
 
-.umart-footer .footer-wrap {
+.gamer-footer {
+    background-color: var(--color-foot);
+    text-align: center;
+}
+
+.gamer-footer .logo-holder {
+    margin-bottom: 56px;
+}
+
+.gamer-footer .logo-holder img {
+    width: 253.04px;
+    height: 53px;
+}
+
+.gamer-footer .foot-menu {
+    margin-bottom: 56px;
+}
+
+.gamer-footer .foot-menu ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    gap: 60px;
 }
 
-.umart-footer .footer-wrap .footer-icon-wrap > ul {
+.gamer-footer .foot-menu ul li a {
+    color: var(--color-secondary);
+    font-size: 20px;
+}
+
+.gamer-footer .foot-menu ul li a:hover {
+    color: var(--color-foot-text);
+}
+
+.gamer-footer .foot-pics ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     gap: 40px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
 }
 
-.umart-footer .footer-wrap .footer-icon-wrap > ul > li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-    color: var(--color-secondary);
+.gamer-footer .foot-items {
+    margin: 64px 0 18px 0;
 }
 
-.umart-footer .footer-wrap .footer-icon-wrap > ul > li:hover {
-    color: var(--color-hover);
-}
-
-.umart-footer .footer-wrap .footer-icon-wrap > ul > li .add-style {
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-    color: var(--color-secondary);
-}
-
-.umart-footer .footer-wrap .footer-icon-wrap > ul > li .add-style > i {
-    font-size: 24px;
-}
-
-.umart-footer .footer-wrap .footer-icon-wrap > ul > li .add-style:hover {
-    color: var(--color-hover);
-}
-
-.umart-footer .footer-wrap .social-media-icon-wrap ul {
-    gap: 20px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.umart-footer .footer-wrap .social-media-icon-wrap ul li a {
-    font-size: 24px;
-    color: var(--color-secondary);
+.gamer-footer .foot-items ul li .text-style {
+    font-size: 16px;
+    color: var(--color-foot-text);
+    font-weight: 400;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
 
-.umart-footer .footer-wrap .social-media-icon-wrap ul li a:hover {
-    color: var(--color-hover);
+.gamer-footer .foot-items ul li .text-style:hover {
+    color: var(--color-secondary);
+}
+
+.gamer-footer .foot-items-2 .text-style {
+    font-size: 16px;
+    color: var(--color-foot-text);
+    font-weight: 400;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.gamer-footer .foot-items-2 .text-style:hover {
+    color: var(--color-secondary);
 }
 
 /*=======================================================================
@@ -769,7 +786,7 @@ li {
     Section Space
 -------------------------*/
 .section-padding-top {
-    padding: 108px 0 0;
+    padding: 120px 0 0;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -791,7 +808,7 @@ li {
 }
 
 .section-padding {
-    padding: 136px 0;
+    padding: 120px 0;
 }
 
 @media only screen and (max-width: 1199px) {

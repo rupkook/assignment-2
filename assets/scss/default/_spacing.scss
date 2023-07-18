@@ -2,7 +2,7 @@
     Section Space
 -------------------------*/
 .section-padding-top {
-    padding: 108px 0 0;
+    padding: 120px 0 0;
 
     @media only screen and (max-width: 1199px){
         padding: 100px 0 0;
@@ -15,7 +15,7 @@
     }
 }
 .section-padding {
-    padding: 136px 0;
+    padding: 120px 0;
     @media #{$smlg-device} {
         padding: 100px 0 70px;
     }

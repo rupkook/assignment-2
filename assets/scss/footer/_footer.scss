@@ -2,51 +2,70 @@
    Footer Styles
 -------------------------*/
 
-
-.umart-footer{
-    padding: 48px 110px 48px 156px;
-    background-color: var(--color-primary);
-    .footer-wrap{
-        display: flex;
-        justify-content: space-between;
-        .footer-icon-wrap{
-            >ul{
-                gap: 40px;
-                display: flex;
-                >li{
-                    display: flex;
-                    transition: var(--transition);
+*{
+    font-family: var(--font-primary);
+    list-style: none;
+    text-decoration: none;
+}
+.gamer-footer{
+    background-color: var(--color-foot);
+    text-align: center;
+    .logo-holder{
+        margin-bottom: 56px;
+        img{
+            width: 253.04px;
+            height: 53px;
+            
+        }
+    }
+    .foot-menu{
+        margin-bottom: 56px;
+        ul{
+            justify-content: center;
+            display: flex;
+            gap: 60px;
+            li{
+                a{
                     color: var(--color-secondary);
-                    &:hover {
-                        color: var(--color-hover);
-                    }
-                    .add-style{
-                        transition: var(--transition);
-                         color: var(--color-secondary);
-                        >i{
-                            font-size: 24px;
-                        }
-                        &:hover {
-                            color: var(--color-hover);
-                        }
+                    font-size: 20px;
+                    &:hover{
+                        color: var(--color-foot-text);
                     }
                 }
             }
         }
-        .social-media-icon-wrap{
-            ul{
-                gap: 20px;
-                display: flex;
-                li{
-                    a{
-                        font-size: 24px;
+    }
+    .foot-pics{
+        ul{
+            justify-content: center;
+            display: flex;
+            gap: 40px;
+        }
+    }
+    .foot-items{
+        margin: 64px 0 18px 0;
+        ul{
+            li{
+                .text-style{
+                    font-size: 16px;
+                    color: var(--color-foot-text);
+                    font-weight: 400;
+                    transition: var(--transition);
+                    &:hover{
                         color: var(--color-secondary);
-                        transition: var(--transition);
-                        &:hover{
-                            color: var(--color-hover);
-                        }
                     }
                 }
+            }
+        }
+    }
+    .foot-items-2{
+        .text-style{
+            font-size: 16px;
+            color: var(--color-foot-text);
+            font-weight: 400;
+            transition: var(--transition);
+            &:hover{
+                color: var(--color-secondary);
             }
         }
     }
