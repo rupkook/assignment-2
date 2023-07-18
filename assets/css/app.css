@@ -1,0 +1,1033 @@
+/*---------------------------------------------
+Template Name: Gamer
+Template URL: 
+Description: Digital Agency HTML5 Template
+Author: 
+Author URL:
+Version: 1.6.0
+
+===============================================   
+STYLESHEET INDEXING
+|
+|___ Default Styles
+|	|___ Variables
+|	|___ Reset Styels
+|	|___ Typography
+|	|___ Forms Styles
+|	|___ Helper Classes 
+|
+|___ Elements Styles
+|	|___ Back To Top
+|	|___ Breadcrumb
+|	|___ Button
+|	|___ Pagination 
+|	|___ Section Heading
+|	|___ Slick 
+|
+|___Template Styles
+|	|___ About Us
+|	|___ Banner
+|	|___ Brand
+|	|___ Call To Action
+|	|___ Case Study
+|	|___ Contact
+|	|___ Counter Up
+|	|___ FAQ
+|	|___ Pricing
+|	|___ Process
+|	|___ Project
+|	|___ Service
+|	|___ Team
+|	|___ Testimonial
+|	|___  Why Choose
+|	|___  404 Error
+|
+|___Blocks Styles
+|	|___ Header Styles
+|	|___ Blog Styles
+|	|___ Footer Styles
+|
+|___Dark Style
+|
+|___Spacing
+|
+|___ END STYLESHEET INDEXING
+
+--------------------------------------------*/
+/*=======================================================================
+1. Default Styles
+=========================================================================*/
+/*-------------------------
+    Variables
+-------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --color-primary: #FF42A5;
+    --color-secondary: #FFFFFF;
+    --menu-font-color: #3C354F;
+    --color-btn-1: #E7E6E9;
+    --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
+    --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
+    --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
+    --gradient-white: linear-gradient(266.3deg, rgba(236, 242, 246, 0) 7.84%, #ECF2F6 29.1%, rgba(236, 242, 246, 0) 64.32%);
+    --gradient-dark: linear-gradient(180deg, #27272E 0%, #303035 100%);
+    --border-light: 1px solid #E3E6E9;
+    --border-lighter: 1px solid #ECF2F6;
+    --border-dark: 1px solid var(--color-ship-gray);
+    --border-gray: 1px solid var(--color-gray-4);
+    --font-primary: "Work Sans", sans-serif;
+    --font-awesome: "Font Awesome 5 Pro";
+    --transition: all 0.3s ease-in-out;
+    --font-body-1: 18px;
+    --font-body-2: 16px;
+    --line-height-b1: 24px;
+    --line-height-b3: 1.1;
+    --h1: 95px;
+    --h2: 48px;
+    --h3: 32px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 18px;
+}
+
+/*-------------------------
+    Reset Styels
+-------------------------*/
+a {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+span {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul.list-style,
+ol.list-style {
+    margin: -10px 0;
+}
+
+ul.list-style li,
+ol.list-style li {
+    margin: 10px 0;
+}
+
+ul.list-style li::marker,
+ol.list-style li::marker {
+    color: var(--color-primary);
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row > [class*=col] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row.g-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row.g-0 > [class*=col] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+    .row-35 {
+        margin-left: -35px;
+        margin-right: -35px;
+    }
+
+    .row-35 > [class*=col] {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .row-40 {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .row-40 > [class*=col] {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .row-45 {
+        margin-left: -45px;
+        margin-right: -45px;
+    }
+
+    .row-45 > [class*=col] {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+/*-------------------------
+    Typography
+-------------------------*/
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-body-1);
+    line-height: var(--line-height-b1);
+    color: var(--menu-font-color);
+    font-weight: 600;
+    height: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+table,
+hr {
+    margin: 0 0 20px 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: var(--color-text-dark);
+}
+
+h1,
+.h1 {
+    font-size: var(--h1);
+    line-height: 1.2;
+}
+
+h2,
+.h2 {
+    font-size: var(--h2);
+    line-height: 1.2;
+}
+
+h3,
+.h3 {
+    font-size: var(--h3);
+    line-height: 1.2;
+}
+
+h4,
+.h4 {
+    font-size: var(--h4);
+    line-height: 1.2;
+}
+
+h5,
+.h5 {
+    font-size: var(--h5);
+    line-height: 1.4;
+}
+
+h6,
+.h6 {
+    font-size: var(--h6);
+    line-height: 1.2;
+}
+
+p {
+    font-size: var(--font-body-3);
+    line-height: var(--line-height-b1);
+    margin: 0 0 40px 0;
+}
+
+.body-font1 {
+    font-size: var(--font-body-1);
+    line-height: var(--line-height-b1);
+}
+
+.body-font2 {
+    font-size: var(--font-body-2);
+    line-height: var(--line-height-b1);
+}
+
+.body-font3 {
+    font-size: var(--font-body-3);
+    line-height: var(--line-height-b3);
+}
+
+.body-font4 {
+    font-size: var(--font-body-4);
+    line-height: var(--line-height-b3);
+}
+
+/*-------------------------
+    Forms Styles
+-------------------------*/
+input,
+.form-control {
+    border: var(--border-lighter);
+    border-radius: 16px;
+    background-color: transparent;
+    color: var(--color-text-dark);
+    padding: 15px 20px;
+    width: 100%;
+  /* -- Placeholder -- */
+}
+
+input:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 20px 48px -14px rgba(153, 161, 170, 0.25);
+    border-color: transparent;
+}
+
+input::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+    color: var(--color-gray-2);
+  /* Firefox */
+    opacity: 1;
+}
+
+input::-moz-placeholder, .form-control::-moz-placeholder {
+    color: var(--color-gray-2);
+  /* Firefox */
+    opacity: 1;
+}
+
+input:-ms-input-placeholder, .form-control:-ms-input-placeholder {
+    color: var(--color-gray-2);
+  /* Firefox */
+    opacity: 1;
+}
+
+input::-ms-input-placeholder, .form-control::-ms-input-placeholder {
+    color: var(--color-gray-2);
+  /* Firefox */
+    opacity: 1;
+}
+
+input::placeholder,
+.form-control::placeholder {
+    color: var(--color-gray-2);
+  /* Firefox */
+    opacity: 1;
+}
+
+input:-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+    color: var(--color-gray-2);
+}
+
+input::-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+    color: var(--color-gray-2);
+}
+
+input {
+    height: 60px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.input-group {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    height: 72px;
+    padding: 10px 10px 10px 55px;
+    box-shadow: 0 24px 48px -15px rgba(153, 161, 170, 0.25);
+}
+
+@media only screen and (max-width: 479px) {
+    .input-group {
+        display: block;
+        box-shadow: none;
+        height: auto;
+        padding: 0;
+    }
+}
+
+.input-group:before {
+    content: url("../../assets/media/icon/message.png");
+    position: absolute;
+    left: 30px;
+    top: 24px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 479px) {
+    .input-group:before {
+        left: 15px;
+        top: 18px;
+    }
+}
+
+.input-group .form-control {
+    padding: 5px 15px;
+    height: auto;
+    border: none;
+    background-color: transparent;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 479px) {
+    .input-group .form-control {
+        height: 60px;
+        width: 100%;
+        border-radius: 20px !important;
+        padding: 5px 15px 5px 50px;
+        border: 1px solid var(--color-light);
+    }
+}
+
+.input-group .subscribe-btn {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 16px !important;
+    margin-left: 0 !important;
+    padding: 10px 28px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.input-group .subscribe-btn:hover {
+    background-color: var(--color-link);
+}
+
+@media only screen and (max-width: 479px) {
+    .input-group .subscribe-btn {
+        margin-top: 15px;
+        padding: 14px 30px;
+    }
+}
+
+.error-msg, .success-msg {
+    margin-top: 25px;
+}
+
+.error-msg p, .success-msg p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.error-msg p {
+    color: #ff0000;
+}
+
+.success-msg p {
+    color: #15c54b;
+}
+
+/*-------------------------
+  Helper Classes
+-------------------------*/
+.bg-color-dark {
+    background-color: var(--color-dark);
+}
+
+.bg-color-light {
+    background-color: var(--color-light);
+}
+
+.bg-color-mercury {
+    background-color: var(--color-mercury);
+}
+
+.bg-color-ship-gray {
+    background-color: var(--color-ship-gray);
+}
+
+.color-gray-4 {
+    color: var(--color-gray-4);
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.no-gutter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+/*=======================================================================
+2. Elements Styles
+=========================================================================*/
+/*=======================================================================
+3. Template Styles
+=========================================================================*/
+/*=======================================================================
+4.Blocks Styles 
+=========================================================================*/
+/*-------------------------
+   Header Styles
+-------------------------*/
+* {
+    font-family: var(--font-primary);
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gamer-header {
+    background-color: var(--color-secondary);
+    padding: 37px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 600px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.gamer-header .logo-holder img {
+    width: 253.04px;
+    height: 53px;
+}
+
+.gamer-header .menus {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.gamer-header .menus .items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.gamer-header .menus .items li a {
+    color: var(--menu-font-color);
+}
+
+.gamer-header .menus .items li a:hover {
+    color: var(--color-primary);
+}
+
+.gamer-header .menus .menu-btn a {
+    color: var(--menu-font-color);
+    background-color: var(--color-btn-1);
+    padding: 14px 24px;
+    border-radius: 8px;
+    border: 2px solid var(--color-btn-1);
+}
+
+.gamer-header .menus .menu-btn a .spacing {
+    margin: 0 8px 0 18px;
+}
+
+.gamer-header .menus .menu-btn a:hover {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--menu-font-color);
+}
+
+/*-------------------------
+   banner Styles
+-------------------------*/
+.umart-banner {
+    background-image: url("../media/banner-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.umart-banner .banner-wrap {
+    padding: 346px 0 317px;
+}
+
+.umart-banner .banner-wrap .bannerpic-text .some-text {
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.umart-banner .banner-wrap .bannerpic-text .banner-title {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.umart-banner .banner-wrap .shop-button a {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 32px;
+    width: 180px;
+    background-color: var(--color-soft-peach);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+}
+
+.umart-banner .banner-wrap .shop-button a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.umart-banner .banner-wrap .shop-button a i {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.umart-banner .banner-wrap .shop-button a .btn-text {
+    color: var(--color-primary);
+}
+
+/*-------------------------
+   Footer Styles
+-------------------------*/
+.umart-footer {
+    padding: 48px 110px 48px 156px;
+    background-color: var(--color-primary);
+}
+
+.umart-footer .footer-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.umart-footer .footer-wrap .footer-icon-wrap > ul {
+    gap: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.umart-footer .footer-wrap .footer-icon-wrap > ul > li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: var(--color-secondary);
+}
+
+.umart-footer .footer-wrap .footer-icon-wrap > ul > li:hover {
+    color: var(--color-hover);
+}
+
+.umart-footer .footer-wrap .footer-icon-wrap > ul > li .add-style {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: var(--color-secondary);
+}
+
+.umart-footer .footer-wrap .footer-icon-wrap > ul > li .add-style > i {
+    font-size: 24px;
+}
+
+.umart-footer .footer-wrap .footer-icon-wrap > ul > li .add-style:hover {
+    color: var(--color-hover);
+}
+
+.umart-footer .footer-wrap .social-media-icon-wrap ul {
+    gap: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.umart-footer .footer-wrap .social-media-icon-wrap ul li a {
+    font-size: 24px;
+    color: var(--color-secondary);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.umart-footer .footer-wrap .social-media-icon-wrap ul li a:hover {
+    color: var(--color-hover);
+}
+
+/*=======================================================================
+5. Dark Style 
+=========================================================================*/
+/*=======================================================================
+6. Spacing 
+=========================================================================*/
+/*-------------------------
+    Section Space
+-------------------------*/
+.section-padding-top {
+    padding: 108px 0 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-padding-top {
+        padding: 100px 0 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-padding-top {
+        padding: 80px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding-top {
+        padding: 60px 0 30px;
+    }
+}
+
+.section-padding {
+    padding: 136px 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-padding {
+        padding: 100px 0 70px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-padding {
+        padding: 80px 0 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 60px 0 30px;
+    }
+}
+
+.section-padding-bottom {
+    padding: 0 0 120px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-padding-bottom {
+        padding: 100px 0 60px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-padding-bottom {
+        padding: 80px 0 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding-bottom {
+        padding: 60px 0 20px;
+    }
+}
+
+.section-padding-equal {
+    padding: 254.13px 0 253.32px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-padding-equal {
+        padding: 100px 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-padding-equal {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding-equal {
+        padding: 60px 0;
+    }
+}
+
+.section-padding-unequal {
+    padding: 134px 0 280px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-padding-unequal {
+        padding: 100px 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-padding-unequal {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding-unequal {
+        padding: 60px 0;
+    }
+}
+
+.mt--200 {
+    margin-top: 200px;
+}
+
+.mt--150 {
+    margin-top: 150px;
+}
+
+.mt--100 {
+    margin-top: 100px;
+}
+
+.mt--90 {
+    margin-top: 90px;
+}
+
+.mt--80 {
+    margin-top: 80px;
+}
+
+.mt--20 {
+    margin-top: 20px !important;
+}
+
+.mb--100 {
+    margin-bottom: 100px;
+}
+
+.mb--90 {
+    margin-bottom: 90px;
+}
+
+.mb--80 {
+    margin-bottom: 80px !important;
+}
+
+.mb--50 {
+    margin-bottom: 50px !important;
+}
+
+.mb--40 {
+    margin-bottom: 40px !important;
+}
+
+.mb--30 {
+    margin-bottom: 30px !important;
+}
+
+.mb--20 {
+    margin-bottom: 20px !important;
+}
+
+.ml--20 {
+    margin-left: 20px !important;
+}
+
+.pt--250 {
+    padding-top: 250px;
+}
+
+.pt--200 {
+    padding-top: 200px;
+}
+
+.pt--150 {
+    padding-top: 150px;
+}
+
+.pb--90 {
+    padding-bottom: 90px;
+}
+
+.pb--80 {
+    padding-bottom: 80px;
+}
+
+.pb--70 {
+    padding-bottom: 70px;
+}
+
+.plr--30 {
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .pt_lg--200 {
+        padding-top: 200px;
+    }
+
+    .pt_lg--100 {
+        padding-top: 100px;
+    }
+
+    .pb_lg--40 {
+        padding-bottom: 40px;
+    }
+
+    .pb_lg--20 {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .mb_md--70 {
+        margin-bottom: 70px;
+    }
+
+    .mb_md--30 {
+        margin-bottom: 30px;
+    }
+
+    .pt_md--100 {
+        padding-top: 100px;
+    }
+
+    .pt_md--80 {
+        padding-top: 80px;
+    }
+
+    .pb_md--70 {
+        padding-bottom: 70px;
+    }
+
+    .pb_md--20 {
+        padding-bottom: 20px;
+    }
+
+    .mt_md--0 {
+        margin-top: 0;
+    }
+
+    .mb_md--0 {
+        margin-bottom: 0;
+    }
+
+    .pb_md--0 {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pt_sm--80 {
+        padding-top: 80px;
+    }
+
+    .pt_sm--60 {
+        padding-top: 60px;
+    }
+
+    .pb_sm--0 {
+        padding-bottom: 0;
+    }
+}
