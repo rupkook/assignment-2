@@ -3,48 +3,64 @@
    banner Styles
 -------------------------*/
 
-
-.umart-banner{
-    background-image: url("../media/banner-pic.jpg");
-    background-position: center;
+.gamer-banner{
+    padding: 19px 0px 0 0px;
+    align-items: center;
+    background-image: url("../media/ban-pic-1.png");
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
-    .banner-wrap{
-        padding: 346px 0 317px;
-        .bannerpic-text{
-            .some-text{
-                color: var(--color-primary);
-                font-weight: 400;
-            }
-            .banner-title{
-                color: var(--color-primary);
-                font-weight: 700;
-                margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 364px;
+    .banner-text{
+        .title-2{
+            color: var(--color-foot);
+            font-weight: 600;
+            margin: 0 0 4px 0;
+        }
+        .title-1{
+            color: purple;
+            font-weight: 800;
+            margin: 0 0 24px 0;
+        }
+        .icon-text{
+            margin-bottom: 40px;
+            ul{
+                li{
+                    a{
+                        .text-style{
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: var(--color-banner-list);
+                        }
+                    }
+                }
             }
         }
-        .shop-button{
-            a{
-                position: relative;
-                overflow: hidden;
-                padding: 16px 32px;
-                width: 180px;
-                background-color: var(--color-soft-peach);
-                transition: var(--transition);
-                transform: scale(1);
-                display: flex;
-                gap: 10px;
-                
-                &:hover{
-                transform: scale(1.1); 
+        .banner-btn{
+            display: flex;
+            gap: 24px;
+            .btn{
+                a{
+                    border-radius: 48px;
+                    font-size: 20px;
+                    color: var(--color-secondary); 
+                    font-weight: 600;
+                    padding: 21px 40px;
+                }    
+                .pink{
+                    background-color: var(--color-primary);
                 }
-                i{
-                    font-size: 24px;
-                    color: var(--color-primary);
-                }
-                .btn-text{
-                    color: var(--color-primary);
+                .blue{
+                    background-color: var(--color-btn-2);
                 }
             }
+        }
+    }
+    .image-holder{
+        img{
+            width: 700px;
+            margin-bottom: -2px;
         }
     }
 }

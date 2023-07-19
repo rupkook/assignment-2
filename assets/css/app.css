@@ -69,6 +69,8 @@ STYLESHEET INDEXING
     --color-btn-1: #E7E6E9;
     --color-foot: #0B0223;
     --color-foot-text: #9D9AA7;
+    --color-btn-2: #4EC5F7;
+    --color-banner-list: #534C64;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
     --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
@@ -202,6 +204,9 @@ ol.list-style li::marker {
     Typography
 -------------------------*/
 body {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
     font-family: var(--font-primary);
     font-size: var(--font-body-1);
     line-height: var(--line-height-b1);
@@ -633,59 +638,75 @@ li {
 /*-------------------------
    banner Styles
 -------------------------*/
-.umart-banner {
-    background-image: url("../media/banner-pic.jpg");
-    background-position: center;
+.gamer-banner {
+    padding: 19px 0px 0 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("../media/ban-pic-1.png");
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.umart-banner .banner-wrap {
-    padding: 346px 0 317px;
-}
-
-.umart-banner .banner-wrap .bannerpic-text .some-text {
-    color: var(--color-primary);
-    font-weight: 400;
-}
-
-.umart-banner .banner-wrap .bannerpic-text .banner-title {
-    color: var(--color-primary);
-    font-weight: 700;
-    margin: 0 0 30px 0;
-}
-
-.umart-banner .banner-wrap .shop-button a {
-    position: relative;
-    overflow: hidden;
-    padding: 16px 32px;
-    width: 180px;
-    background-color: var(--color-soft-peach);
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    gap: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 364px;
 }
 
-.umart-banner .banner-wrap .shop-button a:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+.gamer-banner .banner-text .title-2 {
+    color: var(--color-foot);
+    font-weight: 600;
+    margin: 0 0 4px 0;
 }
 
-.umart-banner .banner-wrap .shop-button a i {
-    font-size: 24px;
-    color: var(--color-primary);
+.gamer-banner .banner-text .title-1 {
+    color: purple;
+    font-weight: 800;
+    margin: 0 0 24px 0;
 }
 
-.umart-banner .banner-wrap .shop-button a .btn-text {
-    color: var(--color-primary);
+.gamer-banner .banner-text .icon-text {
+    margin-bottom: 40px;
+}
+
+.gamer-banner .banner-text .icon-text ul li a .text-style {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-banner-list);
+}
+
+.gamer-banner .banner-text .banner-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+}
+
+.gamer-banner .banner-text .banner-btn .btn a {
+    border-radius: 48px;
+    font-size: 20px;
+    color: var(--color-secondary);
+    font-weight: 600;
+    padding: 21px 40px;
+}
+
+.gamer-banner .banner-text .banner-btn .btn .pink {
+    background-color: var(--color-primary);
+}
+
+.gamer-banner .banner-text .banner-btn .btn .blue {
+    background-color: var(--color-btn-2);
+}
+
+.gamer-banner .image-holder img {
+    width: 700px;
+    margin-bottom: -2px;
 }
 
 /*-------------------------
