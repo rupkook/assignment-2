@@ -18,12 +18,15 @@ ul,li,a{
     gap: 20px;
     justify-content: space-between;
     padding: 0 0 0 84px;
+    flex-wrap: wrap;
     @media screen and (max-width: 768.99px){
         flex-direction: column;
         text-align: center;
         padding: 15px;
+
     }
     .carrier-text{
+        width: 48%;
         @media screen and (max-width: 768.99px){
             flex-direction: column;
             text-align: center;
@@ -38,6 +41,7 @@ ul,li,a{
             color: var(--color-secondary);
             font-weight: 400;
             margin-bottom: 24px;
+           
         }
         .carrier-btn{
             a{
@@ -50,6 +54,7 @@ ul,li,a{
         }
     }
     .pic-holder{
+        width: 48%;
         img{
             width: 700px;
         }

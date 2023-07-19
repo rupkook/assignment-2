@@ -510,7 +510,7 @@ ul, li, a {
     font-size: 20px;
     color: var(--color-secondary);
     font-weight: 600;
-    padding: 21px 40px;
+    padding: 20px 40px;
 }
 
 @media screen and (max-width: 425.99px) {
@@ -521,10 +521,28 @@ ul, li, a {
 
 .gamer-banner .banner-style .banner-text .banner-btn .btn .pink {
     background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.gamer-banner .banner-style .banner-text .banner-btn .btn .pink:hover {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .gamer-banner .banner-style .banner-text .banner-btn .btn .blue {
     background-color: var(--color-btn-2);
+    border: 1px solid var(--color-btn-2);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.gamer-banner .banner-style .banner-text .banner-btn .btn .blue:hover {
+    border: 1px solid var(--color-btn-2);
+    color: var(--color-btn-2);
+    background-color: var(--color-secondary);
 }
 
 .gamer-banner .banner-style .image-holder img {
@@ -778,6 +796,9 @@ ul, li, a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 0 0 84px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768.99px) {
@@ -790,6 +811,10 @@ ul, li, a {
         text-align: center;
         padding: 15px;
     }
+}
+
+.gamer-carrier .carrier-text {
+    width: 48%;
 }
 
 @media screen and (max-width: 768.99px) {
@@ -822,6 +847,10 @@ ul, li, a {
     padding: 21px 40px;
     background-color: var(--color-secondary);
     border-radius: 48px;
+}
+
+.gamer-carrier .pic-holder {
+    width: 48%;
 }
 
 .gamer-carrier .pic-holder img {
@@ -894,6 +923,7 @@ ul, li, a {
 
 .gammer-games-videos .games-video-style .image-holder {
     position: relative;
+    width: 23.7%;
 }
 
 @media screen and (max-width: 768.99px) {

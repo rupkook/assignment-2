@@ -13,7 +13,7 @@ ul,li,a{
     background-repeat: no-repeat;
     @media screen and (max-width: 768.99px){
         background-size: cover;
-        
+
     }
     .banner-style{
         @media screen and (max-width: 768.99px){
@@ -68,7 +68,7 @@ ul,li,a{
                             font-size: 20px;
                             color: var(--color-secondary); 
                             font-weight: 600;
-                            padding: 21px 40px;
+                            padding: 20px 40px;
                             @media screen and (max-width: 425.99px){
                                 padding: 18px 20px;
                             }
@@ -76,9 +76,23 @@ ul,li,a{
                         }    
                         .pink{
                             background-color: var(--color-primary);
+                            border: 1px solid var(--color-primary);
+                            transition: var(--transition);
+                            &:hover{
+                                border: 1px solid var(--color-primary);
+                                color: var(--color-primary);
+                                background-color: var(--color-secondary);
+                            }
                         }
                         .blue{
                             background-color: var(--color-btn-2);
+                            border: 1px solid var(--color-btn-2);
+                            transition: var(--transition);
+                            &:hover{
+                                border: 1px solid var(--color-btn-2);
+                                color: var(--color-btn-2);
+                                background-color: var(--color-secondary);
+                            }
                         }
                     }
                 }
