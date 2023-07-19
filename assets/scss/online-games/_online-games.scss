@@ -7,36 +7,78 @@ ul,li,a{
     text-decoration: none;
 }
 .gamer-online-games{
-    display: flex;
-    gap: 170px;
-    justify-content: center;
     background-color: var(--color-secondary);
-    align-items: center;
-    .pic-holder{
-        margin: 0 0 120px;
-        position: relative;
-        .morepic{
-            position: absolute;
-            right: -18%;
-            top: 60%;
+    .online-games-style{
+        @media screen and (max-width:768.99px){
+            flex-direction: column-reverse;
+            text-align: center;
+            gap:0;
+            padding: 0;
         }
-    }
-    .gamer-text{
-        .title{
-            font-weight: 700;
-            color: var(--color-foot);
-            margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pic-holder{
+            @media screen and (max-width: 576px){
+                width: 350px;
+                height: 420px;
+                margin: 0;
+            }
+            margin: 0 0 120px;
+            position: relative;
+            .morepic{
+                @media screen and (max-width: 576px){
+                    width: 100px;
+                    height: 400px;
+                    right: -8%;
+                    top: 67%;
+                }
+                position: absolute;
+                right: -18%;
+                top: 60%;
+            }
         }
-        .add-color{
-            color: var(--color-title1);
-        }
-        .add-color-2{
-            color: var(--color-title2);
-        }
-        .paragraph{
-            font-size: 18px;
-            font-weight: 400;
-            color: var(--color-banner-list);
+        .gamer-text{
+            .title{
+                @media screen and (max-width: 576px){
+                    margin-bottom: 70px;
+                }
+                font-weight: 700;
+                color: var(--color-foot);
+                margin-bottom: 24px;
+                br{
+                    @media screen and (max-width: 576px){ 
+                       display: none;
+                    }
+                }
+            }
+            .add-color{
+                background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .add-color-2{
+                background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .paragraph{
+               
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--color-banner-list);
+
+                @media screen and (max-width: 576px){ 
+                    margin-bottom: 85px;
+                }
+                br{
+                    @media screen and (max-width: 576px){ 
+                       display: none;
+                    }
+                }
+            }
         }
     }
 }

@@ -6,25 +6,19 @@ ul,li,a{
     list-style: none;
     text-decoration: none;
 }
-.carrier{
-    background-color: var(--color-primary);
-    padding-top: 70px;
-}
-
-.gamer-carrier{  
-    
-    align-items: center;
+.gamer-carrier{
+    @media screen and (max-width: 576px){
+        flex-direction: column;
+        text-align: center;
+    }
     display: flex;
     gap: 20px;
     justify-content: space-between;
     padding: 0 0 0 84px;
-    @media screen and (max-width: 768.99px){
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
+    background-color: var(--color-primary);
+    align-items: center;
     .carrier-text{
-        @media screen and (max-width: 768.99px){
+        @media screen and (max-width: 576px){
             flex-direction: column;
             text-align: center;
         }
