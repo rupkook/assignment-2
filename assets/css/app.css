@@ -71,6 +71,7 @@ STYLESHEET INDEXING
     --color-foot-text: #9D9AA7;
     --color-btn-2: #4EC5F7;
     --color-banner-list: #534C64;
+    --color-back-feat: #FFFCFD;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
     --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
@@ -204,15 +205,13 @@ ol.list-style li::marker {
     Typography
 -------------------------*/
 body {
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
     font-family: var(--font-primary);
     font-size: var(--font-body-1);
     line-height: var(--line-height-b1);
     color: var(--menu-font-color);
     font-weight: 600;
     height: 100%;
+    margin: 0;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -256,9 +255,7 @@ h4,
 h5,
 h6 {
     font-family: var(--font-primary);
-    font-weight: 500;
     letter-spacing: -0.025em;
-    color: var(--color-text-dark);
 }
 
 h1,
@@ -638,6 +635,11 @@ li {
 /*-------------------------
    banner Styles
 -------------------------*/
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
 .gamer-banner {
     padding: 19px 0px 0 0px;
     -webkit-box-align: center;
@@ -674,8 +676,8 @@ li {
     margin-bottom: 40px;
 }
 
-.gamer-banner .banner-text .icon-text ul li a .text-style {
-    font-size: 20px;
+.gamer-banner .banner-text .icon-text ul li .text-style {
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-banner-list);
 }
@@ -707,6 +709,126 @@ li {
 .gamer-banner .image-holder img {
     width: 700px;
     margin-bottom: -2px;
+}
+
+/*-------------------------
+   banner Styles
+-------------------------*/
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.gamer-feature {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 52px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: right;
+    background-color: var(--color-back-feat);
+}
+
+.gamer-feature .feature-text .title {
+    font-weight: 700;
+    color: purple;
+    margin-bottom: 24px;
+}
+
+.gamer-feature .feature-text .paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-banner-list);
+    margin-bottom: 32px;
+}
+
+.gamer-feature .feature-text .feature-btn {
+    margin-bottom: 32px;
+}
+
+.gamer-feature .feature-text .feature-btn .btn {
+    border-radius: 48px;
+    font-size: 20px;
+    color: var(--color-secondary);
+    font-weight: 600;
+    padding: 21px 40px;
+    background-color: var(--color-primary);
+}
+
+.gamer-feature .feature-text .small-text .text-style {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-banner-list);
+}
+
+.gamer-feature .feature-text .more-detail .t-text {
+    font-weight: 700;
+    color: var(--color-banner-list);
+}
+
+/*-------------------------
+   banner Styles
+-------------------------*/
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.gamer-feature {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 52px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: right;
+    background-color: var(--color-back-feat);
+}
+
+.gamer-feature .feature-text .title {
+    font-weight: 700;
+    color: purple;
+    margin-bottom: 24px;
+}
+
+.gamer-feature .feature-text .paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-banner-list);
+    margin-bottom: 32px;
+}
+
+.gamer-feature .feature-text .feature-btn {
+    margin-bottom: 32px;
+}
+
+.gamer-feature .feature-text .feature-btn .btn {
+    border-radius: 48px;
+    font-size: 20px;
+    color: var(--color-secondary);
+    font-weight: 600;
+    padding: 21px 40px;
+    background-color: var(--color-primary);
+}
+
+.gamer-feature .feature-text .small-text .text-style {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-banner-list);
+}
+
+.gamer-feature .feature-text .more-detail .t-text {
+    font-weight: 700;
+    color: var(--color-banner-list);
 }
 
 /*-------------------------
