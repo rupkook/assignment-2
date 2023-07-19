@@ -72,6 +72,8 @@ STYLESHEET INDEXING
     --color-btn-2: #4EC5F7;
     --color-banner-list: #534C64;
     --color-back-feat: #FFFCFD;
+    --color-title1: #E44CBE;
+    --color-title2: #C151D2;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
     --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
@@ -779,55 +781,51 @@ ul, li, a {
     text-decoration: none;
 }
 
-.gamer-feature {
+.gamer-online-games {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    gap: 52px;
+    gap: 170px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    text-align: right;
-    background-color: var(--color-back-feat);
+    background-color: var(--color-secondary);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.gamer-feature .feature-text .title {
+.gamer-online-games .pic-holder {
+    margin: 0 0 120px;
+    position: relative;
+}
+
+.gamer-online-games .pic-holder .morepic {
+    position: absolute;
+    right: -18%;
+    top: 60%;
+}
+
+.gamer-online-games .gamer-text .title {
     font-weight: 700;
-    color: purple;
+    color: var(--color-foot);
     margin-bottom: 24px;
 }
 
-.gamer-feature .feature-text .paragraph {
+.gamer-online-games .gamer-text .add-color {
+    color: var(--color-title1);
+}
+
+.gamer-online-games .gamer-text .add-color-2 {
+    color: var(--color-title2);
+}
+
+.gamer-online-games .gamer-text .paragraph {
     font-size: 18px;
     font-weight: 400;
-    color: var(--color-banner-list);
-    margin-bottom: 32px;
-}
-
-.gamer-feature .feature-text .feature-btn {
-    margin-bottom: 32px;
-}
-
-.gamer-feature .feature-text .feature-btn .btn {
-    border-radius: 48px;
-    font-size: 20px;
-    color: var(--color-secondary);
-    font-weight: 600;
-    padding: 21px 40px;
-    background-color: var(--color-primary);
-}
-
-.gamer-feature .feature-text .small-text .text-style {
-    margin-bottom: 8px;
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--color-banner-list);
-}
-
-.gamer-feature .feature-text .more-detail .t-text {
-    font-weight: 700;
     color: var(--color-banner-list);
 }
 

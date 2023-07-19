@@ -6,48 +6,37 @@ ul,li,a{
     list-style: none;
     text-decoration: none;
 }
-.gamer-feature{
+.gamer-online-games{
     display: flex;
-    gap: 52px;
+    gap: 170px;
     justify-content: center;
-    text-align: right;
-    background-color: var(--color-back-feat);
-    .feature-text{
+    background-color: var(--color-secondary);
+    align-items: center;
+    .pic-holder{
+        margin: 0 0 120px;
+        position: relative;
+        .morepic{
+            position: absolute;
+            right: -18%;
+            top: 60%;
+        }
+    }
+    .gamer-text{
         .title{
             font-weight: 700;
-            color: purple;
+            color: var(--color-foot);
             margin-bottom: 24px;
+        }
+        .add-color{
+            color: var(--color-title1);
+        }
+        .add-color-2{
+            color: var(--color-title2);
         }
         .paragraph{
             font-size: 18px;
             font-weight: 400;
             color: var(--color-banner-list);
-            margin-bottom: 32px;
-        }
-        .feature-btn{
-            margin-bottom: 32px;
-            .btn{
-                border-radius: 48px;
-                font-size: 20px;
-                color: var(--color-secondary);
-                font-weight: 600;
-                padding: 21px 40px;
-                background-color: var(--color-primary);
-            }
-        }
-        .small-text{
-            .text-style{
-                margin-bottom: 8px;
-                font-size: 24px;
-                font-weight: 400;
-                color: var(--color-banner-list);
-            }
-        }
-        .more-detail{
-            .t-text{
-                font-weight: 700;
-                color: var(--color-banner-list);
-            }
         }
     }
 }
