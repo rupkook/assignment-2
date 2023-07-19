@@ -830,6 +830,57 @@ ul, li, a {
 }
 
 /*-------------------------
+   banner Styles
+-------------------------*/
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.gamer-carrier {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 0 0 84px;
+    background-color: var(--color-primary);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.gamer-carrier .carrier-text .title {
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 24px;
+}
+
+.gamer-carrier .carrier-text .paragraph {
+    font-size: 18px;
+    color: var(--color-secondary);
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.gamer-carrier .carrier-text .carrier-btn a {
+    font-size: 20px;
+    color: var(--color-primary);
+    padding: 21px 40px;
+    background-color: var(--color-secondary);
+    border-radius: 48px;
+}
+
+.gamer-carrier .pic-holder img {
+    width: 700px;
+}
+
+/*-------------------------
    Footer Styles
 -------------------------*/
 * {
