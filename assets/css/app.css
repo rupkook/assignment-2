@@ -632,8 +632,15 @@ ul, li, a {
     font-size: 20px;
     color: var(--color-secondary);
     font-weight: 600;
-    padding: 21px 40px;
+    padding: 20px 40px;
     background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.gamer-feature .feature-style .feature-text .feature-btn .btn:hover {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .gamer-feature .feature-style .feature-text .small-text .text-style {
@@ -843,10 +850,17 @@ ul, li, a {
 
 .gamer-carrier .carrier-text .carrier-btn a {
     font-size: 20px;
+    padding: 20px 40px;
     color: var(--color-primary);
-    padding: 21px 40px;
     background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
     border-radius: 48px;
+}
+
+.gamer-carrier .carrier-text .carrier-btn a:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
 }
 
 .gamer-carrier .pic-holder {

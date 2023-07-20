@@ -1,0 +1,114 @@
+/*-------------------------
+   Footer Styles
+-------------------------*/
+
+*{
+    font-family: var(--font-primary);
+    list-style: none;
+    text-decoration: none;
+}
+.gamer-footer{
+    background-color: var(--color-foot);
+    .footer-styles{
+       text-align: center;
+        .logo-holder{
+            margin-bottom: 56px;
+            img{
+                width: 253.04px;
+                height: 53px;
+                
+            }
+        }
+        .foot-menu{
+            margin-bottom: 56px;
+            ul{
+                justify-content: center;
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+                @media screen and (max-width: 567px){
+                    gap: 20px;
+                    }
+                li{
+                    @media screen and (max-width: 567px){
+                    width: 27%;
+                    margin-bottom: 20px;
+                    }
+                } 
+            }
+            ul{ 
+                li{
+                    a{
+                        color: var(--color-secondary);
+                        font-size: 20px;
+                        &:hover{
+                            color: var(--color-foot-text);
+                        }
+                    }
+                }
+            }
+        }
+        .foot-pics{
+            ul{
+                justify-content: center;
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+                @media screen and (max-width: 567px){
+                    gap: 20px;
+                    }
+                li{
+                    @media screen and (max-width: 567px){
+                    width: 27%;
+                    margin-bottom: 20px;
+                    }
+                } 
+            }
+        }
+        .foot-items{
+            
+            margin: 64px 0 18px 0;
+            @media screen and (max-width: 567px){
+                margin: 40px 0 60px 0;
+            }
+            ul{
+                justify-content: center;
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+                @media screen and (max-width: 567px){
+                    gap: 20px;
+                    }
+                li{
+                    @media screen and (max-width: 567px){
+                    width: 46%;
+                    }
+                } 
+            }
+            ul{
+                li{
+                    .text-style{
+                        font-size: 16px;
+                        color: var(--color-foot-text);
+                        font-weight: 400;
+                        transition: var(--transition);
+                        &:hover{
+                            color: var(--color-secondary);
+                        }
+                    }
+                }
+            }
+        }
+        .foot-items-2{
+            .text-style{
+                font-size: 16px;
+                color: var(--color-foot-text);
+                font-weight: 400;
+                transition: var(--transition);
+                &:hover{
+                    color: var(--color-secondary);
+                }
+            }
+        }
+    }
+}   
